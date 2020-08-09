@@ -9,7 +9,7 @@ The application ensures there is no person to person contact by making use of a 
 
 ## How it works
 
-This app is made out of two different parts, one tablet app for the recieving part ( the college or the company ) and one mobile app for the
+This app is made out of two different parts, one tablet app for the admin part ( the college or the company ) and one mobile app for the
 studens or workers at the company.
 
 When the student or worker at the company wants to deliver or collect masks, gloves, alcool bottles, he goes to the disposing office in the company or university.
