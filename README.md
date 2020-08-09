@@ -17,7 +17,9 @@ There he will find another person who is using the admin app, and has the respon
 
 To do this transaction between the user and the company or university, the user gives the items, and then points to the QR code that is in the tablet admin app.
 
-If the transaction is authorized, the user then recieves points, which can be exchanged by starbucks coffees, dominos pizzas, and more.
+If the transaction is authorized, the user then recieves points, which can be exchanged for starbucks coffees, dominos pizzas, and more.
+
+These rewards are choosen by the company or university, and can be dynamically updated. For example, if the user is in level 2, and has 1200 points, he might be able to get a free starbucks coffee.
 
 
 ## Tech stack used
