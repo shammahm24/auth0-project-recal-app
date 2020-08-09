@@ -1,9 +1,16 @@
 # ReCal
+
+## video
+
+## About
 This is an application that keeps track users that collect dispossible masks from an institution and rewards them when they dispose their used masks in designated locations.
 
-The application ensures there is no person to person contact by making use of a qrcode scanning feature which also add to the speed and efficiency of using the application since the client has to perform only one action of opening the scanner.
+The application ensures there is no person to person contact by making use of a qrcode scanning feature which also add to the speed and efficiency of using the application, since the client has to perform only one action of opening the scanner.
 
-## Technologies Used
+## How it works
+
+
+## Tech stack used
 <ul>
   <li>MongoDB ( AWS server )</li>
   <li>Express.js</li>
@@ -25,4 +32,11 @@ https://drive.google.com/file/d/1unlk40ZvbruTjugu9BUrk0XCT0Kg0NBX/view?usp=shari
 
 ### Web Client (Admin App) Vercel, this is a tablet app, use in 1024 x 756 
 https://gatsby-auth0-redux.vercel.app/account
+
+
+
+## How to use it
+
+## License
+MIT
 
