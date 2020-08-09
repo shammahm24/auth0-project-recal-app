@@ -31,7 +31,7 @@ The application ensures there is no person to person contact by making use of a 
 https://drive.google.com/file/d/1unlk40ZvbruTjugu9BUrk0XCT0Kg0NBX/view?usp=sharing
 
 ### Web Client (Admin App) 
-#### Vercel, this is a tablet app, use in 1024 x 756 
+#### This is a tablet app, use in 1024 x 756 
 https://gatsby-auth0-redux.vercel.app/account
 
 
