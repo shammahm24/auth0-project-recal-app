@@ -114,5 +114,5 @@ gatsby develop
 
 
 ## License
-MIT
+MIT (you can use this for whatever you want)
 
