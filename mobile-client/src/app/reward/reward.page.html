@@ -1,0 +1,26 @@
+<ion-content>
+  <ion-item>
+    Score: {{rewards}}
+  </ion-item>
+  <ion-progress-bar color="primary" value="0.25"></ion-progress-bar>
+
+  <ion-item class='rewardtext'>Rewards Available</ion-item>
+  <ion-slides [options]="slideOpts">
+    <ion-slide>
+      <ion-img [src]='pizza'></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img [src]='cupcake'></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img [src]='choclate'></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img [src]='burger'></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img [src]='donuts'></ion-img>
+    </ion-slide>
+    
+  </ion-slides>
+</ion-content>

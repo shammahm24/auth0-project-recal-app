@@ -1,0 +1,17 @@
+.cam_grad{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 48.77%;
+  
+    background: linear-gradient(180deg, rgba(55, 193, 255, 0.75) 0%, rgba(142, 115, 249, 0.75) 100%);
+}
+  
+.butt {
+    width:94%;
+    left:3%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }

@@ -1,0 +1,76 @@
+
+ion-slide>.cam_grad{
+  background: #e0e0e0;
+}
+
+ion-tab-bar{
+  height: 10%;
+  border: none;
+}
+
+ion-slide{
+  height: 100vh;
+}
+
+#splash{
+  width: 100%;
+  height: 100%;
+}
+
+ion-list{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+ion-tab-button>ion-img{
+  height: 10vh;
+}
+
+.mapbut{
+  position: absolute;
+  width: 96%;
+  height: 33px;
+  left: 2%;
+  bottom: 1%;
+  
+  background: #c4c4c4;
+  box-shadow: -2px -2px 12px rgba(255, 255, 255, 0.2), 2px 2px 12px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+.animate{
+  animation: bounce 0.5s infinite alternate;
+  -webkit-animation: bounce 0.5s infinite alternate;
+}
+
+.next{
+  height: 50px;
+  width: 50px;
+  --border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 10px;
+}
+
+.tabs{
+  position: relative;
+  bottom: 25px;
+}

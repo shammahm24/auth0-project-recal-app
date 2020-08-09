@@ -1,0 +1,67 @@
+ion-img{
+    height: 30vh;
+}
+.label{
+    position: relative;
+    top:4vh;
+    text-align: center;
+}
+
+#score>ion-label{
+    position: relative;
+    top:-13vh;
+    left:66%;
+    font-size: 2em;
+    color: red;
+}
+
+.pen_label{
+    font-size: 1.5em;
+    position: relative;
+    top: 3vh;
+}
+#pending>ion-grid{
+    position: relative;
+    top:5vh;
+    width: 90vw;
+    text-align: center;
+    height: 5vh;
+}
+#pending{
+    position: absolute;
+    top:62vh;
+    left: 5vw;
+}
+
+ion-button{
+    position: absolute;
+    bottom: 5vh;
+    width: 95%;
+    left: 2%;
+    height: 5vh;
+}
+
+.ms_lab{
+    font-size: 1.2em;
+}
+
+.ms_val_lab{
+    font-size: 1.5em;
+}
+
+#score>ion-img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25vh;
+    top:3vh;
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+}
+.bgimg{
+    width:100%;
+    background: black;
+}

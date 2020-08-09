@@ -1,0 +1,116 @@
+<ion-content [fullscreen]="true">
+  <ion-slides style='display:none' #mySlider [options]="slideOpts">
+    <ion-slide>
+      <div class='cam_grad'></div>  
+      <ion-img class='butt' [src]="camera_img"></ion-img>
+
+      <ion-tabs>
+        <ion-tab-bar class='tabs' >
+          <ion-tab tab="reward">
+            <ion-img [src]='reward_button'></ion-img>
+          </ion-tab>
+      
+          <ion-tab>
+            <ion-img class='animate' [src]='map_button'></ion-img>
+          </ion-tab>
+      
+          <ion-tab tab="profile">
+            <ion-img [src]='profile_button'></ion-img>
+          </ion-tab>
+        </ion-tab-bar>
+      </ion-tabs>
+      <ion-button class='next' (click) = 'swipeNext()' shape=round>Next</ion-button>
+
+    </ion-slide>
+    <ion-slide>
+      <div class='cam_grad'></div>  
+      <ion-img class='butt' [src]="outer_c"></ion-img>
+      <ion-img class='animate' [src]="cam"></ion-img>
+
+      <ion-tabs>
+        <ion-tab-bar class='tabs' slot="bottom">
+          <ion-tab tab="reward">
+            <ion-img [src]='reward_button'></ion-img>
+          </ion-tab>
+      
+          <ion-tab>
+            <ion-img [src]='map_button'></ion-img>
+          </ion-tab>
+      
+          <ion-tab tab="profile">
+            <ion-img [src]='profile_button'></ion-img>
+          </ion-tab>
+        </ion-tab-bar>
+      </ion-tabs>
+      <ion-button class='next' (click) = 'swipeNext()' shape=round>Next</ion-button>
+
+    </ion-slide>
+    <ion-slide>
+      <div class='cam_grad'></div>  
+      <ion-img class='butt' [src]="camera_img"></ion-img>
+
+      <ion-tabs>
+        <ion-tab-bar class='tabs' slot="bottom">
+          <ion-tab tab="reward">
+            <ion-img class='animate' [src]='reward_button'></ion-img>
+          </ion-tab>
+      
+          <ion-tab>
+            <ion-img [src]='map_button'></ion-img>
+          </ion-tab>
+      
+          <ion-tab tab="profile">
+            <ion-img [src]='profile_button'></ion-img>
+          </ion-tab>
+        </ion-tab-bar>
+      </ion-tabs>
+      <ion-button class='next' (click) = 'swipeNext()' shape=round>Next</ion-button>
+
+    </ion-slide>
+    <ion-slide>
+      <div class='cam_grad'></div>  
+      <ion-img class='butt' [src]="camera_img"></ion-img>
+
+      <ion-tabs>
+        <ion-tab-bar class='tabs' slot="bottom">
+          <ion-tab tab="reward">
+            <ion-img [src]='reward_button'></ion-img>
+          </ion-tab>
+      
+          <ion-tab>
+            <ion-img [src]='map_button'></ion-img>
+          </ion-tab>
+      
+          <ion-tab tab="profile">
+            <ion-img class='animate' [src]='profile_button'></ion-img>
+          </ion-tab>
+        </ion-tab-bar>
+      </ion-tabs>
+      <ion-button class='next' (click) = 'swipeNext()' shape=round>Next</ion-button>
+
+    </ion-slide>
+  </ion-slides>
+  <div >
+  
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button id='rb' (click)='hide("reward")' tab="reward">
+        <ion-img [src]='reward_button'></ion-img>
+      </ion-tab-button>
+
+      <ion-tab-button id='sb' style="display: none;" (click)='hide("scan")' tab="scan">
+        <ion-img [src]='home_button'></ion-img>
+      </ion-tab-button>
+  
+      <ion-tab-button>
+        <ion-img (click)='getMap()' [src]='map_button'></ion-img>
+      </ion-tab-button>
+  
+      <ion-tab-button id='pb' (click)='hide("profile")' tab="profile">
+        <ion-img [src]='profile_button'></ion-img>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+   <!-- <ion-button (click)='getMap()' class="mapbut" color='light'></ion-button>-->
+   </div>
+</ion-content>
