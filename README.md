@@ -71,8 +71,9 @@ https://gatsby-auth0-redux.vercel.app/account
 
 ## How to use it
 
-### For the Android app you can:
+### For the Android
 
+#### To get started you can:
 
 ### For the admin tablet app
 
