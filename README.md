@@ -69,7 +69,7 @@ If you've cloned this repository in the admin folder, navigate into the director
 npm install
 ```
 
-### Running the Admin Gatsby app:
+### Running the Admin Gatsby app in the admin folder:
 
 #### Commands
 
