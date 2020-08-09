@@ -17,7 +17,7 @@ There he will find another person who is using the admin app, and has the respon
 
 To do this transaction between the user and the company or university, the user gives the items, and then points to the QR code that is in the tablet admin app.
 
-If the transaction is authorized, the user then recieves points, , which can be exchanged by starbucks coffees, dominos pizzas, and more.
+If the transaction is authorized, the user then recieves points, which can be exchanged by starbucks coffees, dominos pizzas, and more.
 
 The technologies used in the application were Node.js, Gatsby, Redux, Socket.io, Ionic, Vercel, AWS and MongoDB.  
 
