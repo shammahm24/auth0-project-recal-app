@@ -19,8 +19,6 @@ To do this transaction between the user and the company or university, the user 
 
 If the transaction is authorized, the user then recieves points, which can be exchanged by starbucks coffees, dominos pizzas, and more.
 
-The technologies used in the application were Node.js, Gatsby, Redux, Socket.io, Ionic, Vercel, AWS and MongoDB.  
-
 
 ## Tech stack used
 <ul>
