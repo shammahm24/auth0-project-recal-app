@@ -52,24 +52,24 @@ https://gatsby-auth0-redux.vercel.app/account
 ### To get started you can:
 
 ```bash
-git clone https://github.com/danijorgesantos/gatsby-auth0-redux.git
+git clone https://github.com/shammahm24/auth0-project-recal-app
 ```
 
 ```bash
-gatsby new auth0-gatsby https://github.com/danijorgesantos/gatsby-auth0-redux.git
+gatsby new auth0-gatsby https://github.com/shammahm24/auth0-project-recal-app/admin
 ```
 
 ### Pre-requisites for Auth0 Gatsby Redux
 
 #### Install modules
 
-If you've cloned this repository, navigate into the directory and install the npm modules using this command:
+If you've cloned this repository in the admin folder, navigate into the directory and install the npm modules using this command:
 
 ```bash
 npm install
 ```
 
-### Running Auth0 Gatsby Redux
+### Running the Admin Gatsby app:
 
 #### Commands
 
