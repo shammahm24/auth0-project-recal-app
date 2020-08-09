@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 // Create Schema
 const UserSchema = new Schema({
   _id: mongoose.Schema.Types.ObjectId,
-  username: {
+/**  username: {
     type: String,
     required: true
   },
@@ -15,6 +15,10 @@ const UserSchema = new Schema({
   password: {
     type: String,
     required: true
+  },**/
+  uid:{
+    type:String,
+    required:true
   },
   points:{
     type:Number,
