@@ -19,7 +19,7 @@ To do this transaction between the user and the company or university, the user 
 
 If the transaction is authorized, the user then recieves points, which can be exchanged for starbucks coffees, dominos pizzas, and more.
 
-These rewards are choosen by the company or university, and can be dynamically updated. For example, if the user is in level 2, and has 1200 points, he might be able to get a free starbucks coffee.
+These rewards are choosen by the company or university, and can be dynamically updated. For example, if the user is in level 2, and has 1200 points, he might be able to get a free starbucks coffee. This starbucks coffee was decided by the company or university for that specific level or number of points.
 
 
 ## Tech stack used
