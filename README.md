@@ -9,6 +9,14 @@ The application ensures there is no person to person contact by making use of a 
 
 ## How it works
 
+This app is made out of two different parts, one tablet app for the recieving part ( the college or the company ) and one mobile app for the
+studens or workers at the company.
+
+When the student or worker wants to deliver the masks, he goes to the disposing office, points the app to a QR code to confirm the transaction,
+and then recieves points for doing that, which can be exchanged by starbucks coffees, dominos pizzas, and more.
+
+The technologies used in the application were Node.js, Gatsby, Redux, Socket.io, Ionic, Vercel, AWS and MongoDB.  
+
 
 ## Tech stack used
 <ul>
