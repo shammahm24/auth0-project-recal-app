@@ -46,12 +46,12 @@ https://gatsby-auth0-redux.vercel.app/account
 
 ## How to use it
 
-## For the Android app you can:
+### For the Android app you can:
 
 
-## For the admin tablet app
+### For the admin tablet app
 
-### To get started you can:
+#### To get started you can:
 
 ```bash
 git clone https://github.com/shammahm24/auth0-project-recal-app
@@ -61,9 +61,9 @@ git clone https://github.com/shammahm24/auth0-project-recal-app
 gatsby new auth0-gatsby https://github.com/shammahm24/auth0-project-recal-app/admin
 ```
 
-### Pre-requisites for Auth0 Gatsby Redux
+#### Pre-requisites for Auth0 Gatsby Redux
 
-#### Install modules
+##### Install modules
 
 If you've cloned this repository in the admin folder, navigate into the directory and install the npm modules using this command:
 
@@ -71,9 +71,9 @@ If you've cloned this repository in the admin folder, navigate into the director
 npm install
 ```
 
-### Running the Admin Gatsby app in the admin folder:
+#### Running the Admin Gatsby app in the admin folder:
 
-#### Commands
+##### Commands
 
 Running the app in localhost:8000:
 
