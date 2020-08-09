@@ -46,6 +46,40 @@ https://gatsby-auth0-redux.vercel.app/account
 
 ## How to use it
 
+
+## For the admin tablet app
+
+### To get started you can:
+
+```bash
+git clone https://github.com/danijorgesantos/gatsby-auth0-redux.git
+```
+
+```bash
+gatsby new auth0-gatsby https://github.com/danijorgesantos/gatsby-auth0-redux.git
+```
+
+### Pre-requisites for Auth0 Gatsby Redux
+
+#### Install modules
+
+If you've cloned this repository, navigate into the directory and install the npm modules using this command:
+
+```bash
+npm install
+```
+
+### Running Auth0 Gatsby Redux
+
+#### Commands
+
+Running the app in localhost:8000:
+
+```bash
+gatsby develop
+```
+
+
 ## License
 MIT
 
