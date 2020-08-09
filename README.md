@@ -36,7 +36,9 @@ The items returned or collected, can also be dynamically updated by the company 
 
 ##### Going beyond covid-19 ...
 
-This project isn´t just useful in covid-19 times, the university or company can keep using it after that, due the adaptability the app offers. Forget boring tasks like updating your develpment hours, or having a list of office items to return at a certain date. Now everything is easy to keep track.. and students or workers get rewarded for doing that. Imagine the workers at a company recieving a free beer on the last friday of the month, if they have all of the develpment hours updated and ready for the financials team. You would never again have to remember people to update their hours. We can really see the Human resourses department at a company having fun with this one :)
+This project isn´t just useful in covid-19 times, the university or company can keep using it after that, due the adaptability the app offers. Forget boring tasks like updating your develpment hours, or having a list of office items to return at a certain date. Now everything is easy to keep track.. and students or workers get rewarded for doing that. Imagine the workers at a company recieving a free beer on the last friday of the month, if they have all of the develpment hours updated and ready for the financials team. You would never again have to remember people to update their hours.
+
+We can really see the Human resourses department at a company having fun with this one :)
 
 Helping the enviroment, the company, your university, recal is there for you.
 
