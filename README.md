@@ -83,6 +83,23 @@ https://gatsby-auth0-redux.vercel.app/account
 
 #### To get started you can:
 
+```bash
+cd /mobile-client/
+```
+
+```bash
+npm install
+```
+
+```bash
+ionic cordova prepare android
+```
+
+```bash
+ionic cordova run android
+```
+
+
 ### For the admin tablet app
 
 #### To get started you can:
