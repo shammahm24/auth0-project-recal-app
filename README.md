@@ -13,7 +13,7 @@ This app is made out of two different parts, one tablet app for the recieving pa
 studens or workers at the company.
 
 When the student or worker at the company wants to deliver or collect masks, gloves, alcool bottles, he goes to the disposing office in the company or university.
-There he will find another person who is using the admin app, and has the responsibility to give or recieve masks.
+There he will find another person who is using the admin app, and has the responsibility to give or recieve items.
 
 To do this transaction between the user and the company or university, the user gives the items, and then points to the QR code that is in the tablet admin app.
 
