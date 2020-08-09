@@ -34,7 +34,7 @@ These rewards are choosen by the company or university, and can be dynamically u
 
 The items returned or collected, can also be dynamically updated by the company or uni. This allows for flexibility, having a bigger scope of use, and most importantly ...
 
-##### going beyond
+##### going beyond covid-19 ...
 
 This project isn´t just useful in covid-19 times, the university or company can keep using it after that due the adaptability the app offers. Forget boring tasks like updating your develpment hours, or having a list of office items to return at a certain date. Now everything is easy to keep track.. and students or workers get rewarded for doing that. We can really see the Human resourses department at a company having fun with this one :)
 
