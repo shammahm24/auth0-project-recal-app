@@ -12,8 +12,12 @@ The application ensures there is no person to person contact by making use of a 
 This app is made out of two different parts, one tablet app for the recieving part ( the college or the company ) and one mobile app for the
 studens or workers at the company.
 
-When the student or worker wants to deliver the masks, he goes to the disposing office, points the app to a QR code to confirm the transaction,
-and then recieves points for doing that, which can be exchanged by starbucks coffees, dominos pizzas, and more.
+When the student or worker at the company wants to deliver or collect masks, gloves, alcool bottles, he goes to the disposing office in the company or university.
+There he will find another person who is using the admin app, and has the responsibility to give or recieve masks.
+
+To do this transaction between the user and the company or university, the user gives the items, and then points to the QR code that is in the tablet admin app.
+
+If the transaction is authorized, the user then recieves points, , which can be exchanged by starbucks coffees, dominos pizzas, and more.
 
 The technologies used in the application were Node.js, Gatsby, Redux, Socket.io, Ionic, Vercel, AWS and MongoDB.  
 
