@@ -3,7 +3,18 @@
 ## Video
 
 ## About
-This is an application that keeps track users that collect dispossible masks from an institution and rewards them when they dispose their used masks in designated locations.
+
+This app was made for the Auth0 Hackaton, the team involved in the all project ( not just this app ) was Swapil, Shammah, Daniel and Sandesh.
+
+The category we choose on the hackaton was the one that allowed us to solve the impacts of covid in the world. 
+
+Even though Covid helped the enviroment when emissions have fallen sharply due to the lockdown, and people bieng able to work remotely,
+there was another problem that started to manifest itself, the beaches and florests started to get cluttered with masks, alcool bottles,
+and plastic gloves.
+
+Our idea was simple, have an app where you can have rewards for returning the used masks, gloves, and alcool bottles to the right places.
+
+In the U.S, colleges and companies have been giving these items to students and employers respectively.
 
 The application ensures there is no person to person contact by making use of a qrcode scanning feature which also add to the speed and efficiency of using the application, since the client has to perform only one action of opening the scanner.
 
