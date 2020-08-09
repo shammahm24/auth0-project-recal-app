@@ -55,10 +55,10 @@ router.get('/',(req,res,next)=>{
     });
 });
 
-router.get('/:userId',checkAuth,(req,res,next)=>{
+router.get('/:userId',(req,res,next)=>{
   var url_parts = req.protocol + '://' + req.get('host') + req.originalUrl;
   const id=req.params.userId;
-  User.findById(id)
+  User.findOne({uid :id})
   .select('username _id email points collected returned')
   .exec()
   .then(doc=>{
@@ -84,6 +84,28 @@ router.get('/:userId',checkAuth,(req,res,next)=>{
   });
 });
 
+//new signup route getting user id from auth0
+router.post('/signup',(req,res)=>{
+  const user=new User({
+    _id:new mongoose.Types.ObjectId(),
+    uid:req.body.uid,
+  });
+  user.save()
+  .then(result=>{
+    console.log(result);
+    res.status(201).json({
+      message:'User created'
+    });
+  })
+  .catch(err=>{
+    console.log(err);
+    res.status(500).json({
+      error:err
+    })
+  });
+});
+
+/**
 
 //update for auth0
 router.post('/signup',(req,res,next)=>{
@@ -140,8 +162,9 @@ router.post('/signup',(req,res,next)=>{
         error:err
       })
     });
-});
+}); **/
 
+/**
 //update for auth0
 router.post('/login',(req,res,next)=>{
   // Form validation
@@ -204,9 +227,9 @@ const { errors, isValid } = validateLoginInput(req.body);
         error:err
       })
     });
-});
+}); **/
 
-router.patch('/:userId',checkAuth,(req,res,next)=>{
+router.patch('/:userId',(req,res,next)=>{
   const id=req.params.userId;
   let fileID;
   console.log("Patching")
@@ -233,7 +256,7 @@ router.patch('/:userId',checkAuth,(req,res,next)=>{
   });
 });
 
-router.delete('/:userId',checkAuth,(req,res,next)=>{
+router.delete('/:userId',(req,res,next)=>{
   User.remove({_id:req.params.id})
   .exec()
   .then(result=>{

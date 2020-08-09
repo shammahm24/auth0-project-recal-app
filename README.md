@@ -1,4 +1,4 @@
-# ReCal
+# Recal
 
 ## Video
 

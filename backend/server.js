@@ -56,13 +56,16 @@ app.get('/',(req,res)=>{
 //route to access user data
 app.use('/users',userRoutes);
 
+var globalCode=0;
+var isCollection;
 //route for the collection key
-app.get('/ccode',checkAuth,async function (req,res){
+app.get('/ccode',async function (req,res){
   var code= `${getRandomCode()}`;
   console.log(`${code}`);
   res.send(`${code}`);
   try{
     await creatNameSpace(code,true)
+    await updateCode(code,true);
   }
   catch{
     console.log(err)
@@ -71,18 +74,76 @@ app.get('/ccode',checkAuth,async function (req,res){
 
 });
 
+
+
 //route for the return key
-app.get('/rcode',checkAuth,async (req,res)=>{
-  var code= `${getRandomCode()}`;
+app.get('/rcode',async (req,res)=>{
+    var code= `${getRandomCode()}`;
   console.log(`${code}`);
   res.send(`${code}`);
   try{
     await creatNameSpace(code,false)
+    await updateCode(code,false);
   }
   catch{
     console.log(err)
     res.send(err)
   }
+});
+
+//update gloabla variables
+function updateCode(c,isC){
+  globalCode=c;
+  isCollection=isC;
+}
+
+app.post(`/transaction`,(req,res)=>{
+  const id=req.body.userId;
+  const code=req.body.code;
+  if(code===globalCode){
+  if(isCollection){
+    User.findOneAndUpdate({uid :id}, {$inc : {collected : 1}}).exec().then(result=>{
+      console.log(result);
+      res.status(200).json({
+        message:'User updated',
+        request:{
+          type:'GET',
+        }
+      });
+    })
+    .catch(err=>{
+      console.log(err);
+      res.status(500).json({
+        error:err
+      });
+    });
+    res.send("collection complete")
+  }else{
+    User.findOneAndUpdate({uid :id}, {$inc : {returned : 1}}).exec().then(result=>{
+      console.log(result);
+      res.status(200).json({
+        message:'User updated',
+        request:{
+          type:'GET',
+
+        }
+      });
+    })
+    .catch(err=>{
+      console.log(err);
+      res.status(500).json({
+        error:err
+      });
+    });
+    res.send("Return complete")
+  }
+console.log(id)}
+else{
+  console.log("Unauthorized code");
+  res.status(401).json({
+    message:'Unauthorized collect/return code',
+  });
+}
 });
 
 //create new namespace
@@ -90,18 +151,26 @@ app.get('/rcode',checkAuth,async (req,res)=>{
 function creatNameSpace(code,isCollection){
  var ccode= code;
 
- var cname_space=io.of(`${ccode}`); //""+`${ccode}`
- cname_space.on('connection',socketioJwt.authorize({
+ /**socketioJwt.authorize({
    secret:process.env.JWT_KEY,
    timeout:5000
- })).on('authenticated',function(socket){
+ })).on('authenticated',**/
+
+ var cname_space=io.of(`${ccode}`); //""+`${ccode}`
+ cname_space.on('connection',function(socket){
    console.log(`Device connected on ns: ${ccode}`);
-   cname_space.emit('hi');
+   if(isCollection){
+     cname_space.emit('hi',{message:'Collection Complete',code:`connected to ${ccode}`});
+   }else{
+     cname_space.emit('hi',{message:'Return Complete',code:`connected to ${ccode}`});
+   }
    connectedSockets=Object.keys(cname_space.sockets);
    connectedSocketsLength=connectedSockets.length;
    console.log(connectedSocketsLength)
-    socket.send(`code ${ccode} accepted`);
+   cname_space.send(`code ${ccode} accepted`);
 
+   //socket.on('message', function(data){console.log('Data from client: '+data)});
+   console.log('This is global: '+globalCode)
     //check if both admin and client are connected
     //disconnect all clients and delete the namespace
     connectedSockets.forEach(socketId => {
@@ -111,9 +180,9 @@ function creatNameSpace(code,isCollection){
     delete io.nsps[`${ccode}`]; // Remove from the server namespaces
 
     //update staion database
-    updateStationTransaction(isCollection);
+    //updateStationTransaction(isCollection);
     //update user account
-    updateUserTransaction(isCollection)
+    //updateUserTransaction(isCollection)
 
  });
 }
