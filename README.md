@@ -42,6 +42,9 @@ We can really see the Human resourses department at a company having fun with th
 
 Helping the enviroment, the company, your university, recal is there for you.
 
+
+
+Example of the tablet app for the uni of Chicago:
 ![alt text](https://github.com/danijorgesantos/gatsby-auth0-redux/blob/master/readme.PNG?raw=true)
 
 
