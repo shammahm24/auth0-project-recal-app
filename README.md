@@ -4,7 +4,7 @@
 
 ## About
 
-This app was made for the Auth0 Hackaton, the team involved in the all recal project was Swapnil Madhavi, Shammah Matasva, Daniel Santos and Sandesh Chinchole.
+This app was made for the Auth0 Hackaton, the team involved in the all recal project was [Swapnil Madhavi](https://www.linkedin.com/in/swapnil-madhavi/), [Shammah Matasva](https://www.linkedin.com/in/shammah-matasva/), [Daniel Santos](https://www.linkedin.com/in/daniel-santos-102aa8190/) and [Sandesh Chinchole](https://www.linkedin.com/in/sandeshchinchole/).
 
 The category we choose on the hackaton was the one that allowed us to solve the impacts of covid in the world. 
 
@@ -69,7 +69,7 @@ Example of the tablet app for the uni of Chicago:
 ## App Demo Links
 ### Mobile Client
 #### Android
-https://drive.google.com/file/d/1unlk40ZvbruTjugu9BUrk0XCT0Kg0NBX/view?usp=sharing
+https://drive.google.com/file/d/1Gc34QyJ-P1T1Yqtlt305WKwC6E-yZ63S/view?usp=sharing
 
 ### Web Client (Admin App) 
 #### This is a tablet app, use in 1024 x 756 
