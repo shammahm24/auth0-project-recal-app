@@ -4,7 +4,7 @@
 
 ## About
 
-This app was made for the Auth0 Hackaton, the team involved in the all recal project was Swapil, Shammah, Daniel and Sandesh.
+This app was made for the Auth0 Hackaton, the team involved in the all recal project was Swapnil Madhavi, Shammah Matasva, Daniel Santos and Sandesh Chinchole.
 
 The category we choose on the hackaton was the one that allowed us to solve the impacts of covid in the world. 
 
