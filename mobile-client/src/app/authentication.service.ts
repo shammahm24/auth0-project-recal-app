@@ -106,38 +106,15 @@ export class AuthenticationService {
   }
 
   logout() {
-      this.accessToken = null;
-      this.user = null;
-      this.loggedIn = false;
-      console.log('safari', this.safariViewController)
-      this.safariViewController.isAvailable()
-        .then((available: boolean) => {
-          const domain = auth0Config.domain;
-          const clientId = auth0Config.clientId;
-          const pkgId = auth0Config.packageIdentifier;
-          const url = 'https://${domain}/v2/logout?client_id=${clientId}&returnTo=${pkgId}://${domain}/cordova/${pkgId}/callback';
-          console.log('url', url)
-          if (available) {
-            this.safariViewController.show({ url })
-            .subscribe((result: any) => {
-                if(result.event === 'opened') console.log('Opened');
-                else if(result.event === 'closed') console.log('Closed');
-
-                if (result.event === 'loaded') {
-                  console.log('Loaded');
-                  this.storage.remove('profile');
-                  this.storage.remove('access_token');
-                  this.storage.remove('expires_at');
-                  this.safariViewController.hide();
-                }
-              },
-              (error: any) => console.error(error)
-            );
-          } else {
-            // use fallback browser
-            cordova.InAppBrowser.open(url, '_system');
-          }
-        }
-      );
-    }
+    this.storage.remove('profile');
+    this.storage.remove('access_token');
+    this.storage.remove('expires_at');
+    this.storage.remove('initial');
+    this.storage.remove('map_initial');
+    this.storage.clear()
+    this.accessToken = null;
+    this.user = null;
+    this.loggedIn = false;
+    this.login()
+  }
 }

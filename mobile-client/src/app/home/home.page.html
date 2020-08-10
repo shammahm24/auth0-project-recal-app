@@ -1,9 +1,47 @@
 <ion-content [fullscreen]="true">
-  <ion-slides style='display:none' #mySlider [options]="slideOpts">
+  <ion-slides id='slides' style='display:none' #mySlider [options]="slideOpts">
+    <ion-slide>
+      <div class="onboarding">
+        <ion-img [src]='bro' class="onboarding__section-svg" ></ion-img>
+        <div class="onboarding__section-text">
+            <div class="ball">
+            <div class="inside-ball">
+                <p class="p-center">collect<br> & <br> dispose</p>
+            </div>
+            </div>
+            <div class="text">
+                <p class="bottom-text">Scan QR code to receive and safely dispose of masks at the Recal centers. Points will be added to
+                    your account whenever you return used masks at the Recal centers.</p>
+            </div>
+        </div>
+    </div>
+     
+ 
+      <ion-button class='next' (click) = 'swipeNext()' color="dark" shape=round>Next</ion-button>
+ 
+    </ion-slide>
+    <ion-slide>
+      <div class="onboarding">
+        <ion-img class="onboarding__section-svg" [src]='rafiki'></ion-img>
+        <div class="reward__section-text">
+            <div class="reward_ball">
+            <div class="inside-ball">
+                <p class="p-center">Rewards</p>
+            </div>
+            </div>
+            <div class="text">
+                <p class="bottom-text">Redeem the points you've collected at any of our partner stores and service providers for discounts on the products and services you love</p>
+            </div>
+        </div>
+    </div>
+      <ion-button class='next' (click) = 'swipeNext()' color="dark" shape=round>Next</ion-button>
+ 
+    </ion-slide>
     <ion-slide>
       <div class='cam_grad'></div>  
       <ion-img class='butt' [src]="camera_img"></ion-img>
-
+      <ion-img class='l_blob' [src]="locate_blob"></ion-img>
+      
       <ion-tabs>
         <ion-tab-bar class='tabs' >
           <ion-tab tab="reward">
@@ -19,14 +57,14 @@
           </ion-tab>
         </ion-tab-bar>
       </ion-tabs>
-      <ion-button class='next' (click) = 'swipeNext()' shape=round>Next</ion-button>
+      <ion-button class='next' (click) = 'swipeNext()' color="dark" shape=round>Next</ion-button>
 
     </ion-slide>
     <ion-slide>
       <div class='cam_grad'></div>  
       <ion-img class='butt' [src]="outer_c"></ion-img>
       <ion-img class='animate' [src]="cam"></ion-img>
-
+      <ion-img class='l_blob' [src]="scan_blob"></ion-img>
       <ion-tabs>
         <ion-tab-bar class='tabs' slot="bottom">
           <ion-tab tab="reward">
@@ -42,12 +80,13 @@
           </ion-tab>
         </ion-tab-bar>
       </ion-tabs>
-      <ion-button class='next' (click) = 'swipeNext()' shape=round>Next</ion-button>
+      <ion-button class='next' (click) = 'swipeNext()' color="dark" shape=round>Next</ion-button>
 
     </ion-slide>
     <ion-slide>
       <div class='cam_grad'></div>  
       <ion-img class='butt' [src]="camera_img"></ion-img>
+      <ion-img class='l_blob' [src]="reward_blob"></ion-img>
 
       <ion-tabs>
         <ion-tab-bar class='tabs' slot="bottom">
@@ -64,12 +103,13 @@
           </ion-tab>
         </ion-tab-bar>
       </ion-tabs>
-      <ion-button class='next' (click) = 'swipeNext()' shape=round>Next</ion-button>
+      <ion-button class='next' (click) = 'swipeNext()' color='dark' shape=round>Next</ion-button>
 
     </ion-slide>
     <ion-slide>
       <div class='cam_grad'></div>  
       <ion-img class='butt' [src]="camera_img"></ion-img>
+      <ion-img class='p_blob' [src]="profile_blob"></ion-img>
 
       <ion-tabs>
         <ion-tab-bar class='tabs' slot="bottom">
@@ -86,11 +126,11 @@
           </ion-tab>
         </ion-tab-bar>
       </ion-tabs>
-      <ion-button class='next' (click) = 'swipeNext()' shape=round>Next</ion-button>
+      <ion-button class='next' color='dark' (click) = 'showMain()' shape=round>Continue</ion-button>
 
     </ion-slide>
   </ion-slides>
-  <div >
+  <div id='main'>
   
   <ion-tabs>
     <ion-tab-bar slot="bottom">

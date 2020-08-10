@@ -4,7 +4,7 @@ ion-slide>.cam_grad{
 }
 
 ion-tab-bar{
-  height: 10%;
+  height: 17%;
   border: none;
 }
 
@@ -22,7 +22,7 @@ ion-list{
   padding-bottom: 0;
 }
 
-ion-tab-button>ion-img{
+ion-tab-button>ion-img,ion-tab>ion-img{
   height: 10vh;
 }
 
@@ -59,10 +59,64 @@ ion-tab-button>ion-img{
   animation: bounce 0.5s infinite alternate;
   -webkit-animation: bounce 0.5s infinite alternate;
 }
+.onboarding {
+  width:100vw;
+  height:100vh;
+  background:  white;
+}
 
+.onboarding__section-svg {
+  width:100%;
+  height: 50%;
+}
+
+.onboarding__section-text {
+width:100%;
+height:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #92E3A9;
+}
+
+.text {
+  width:80%;
+  height:auto;
+}
+
+.ball {
+width:200px;
+height:200px;
+border-radius: 50%;
+background:  #92E3A9;
+margin-top:-40%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.inside-ball {
+width:90%;
+height:90%;
+border-radius: 50%;
+background: white;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#92E3A9;
+}
+
+.p-center {
+text-align: center;
+}
+
+.bottom-text {
+  text-align: justify;
+text-justify: inter-word;
+}
 .next{
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   --border-radius: 50%;
   position: absolute;
   right: 5px;
@@ -73,4 +127,57 @@ ion-tab-button>ion-img{
 .tabs{
   position: relative;
   bottom: 25px;
+}
+
+.cam_grad{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 48.77%;
+
+  background: linear-gradient(180deg, rgba(55, 193, 255, 0.75) 0%, rgba(142, 115, 249, 0.75) 100%);
+}
+
+.butt {
+  width:94%;
+  left:3%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.l_blob{
+  position: absolute;
+  top: 4vh;
+  width: 80%;
+  left: 10%;
+}
+
+.p_blob{
+  position: absolute;
+    width: 70%;
+    left: 10%;
+    top:0.3%
+}
+
+.reward__section-text{
+  width:100%;
+height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #407BFF;
+}
+
+.reward_ball{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  background:  #407BFF;;
+  margin-top:-40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

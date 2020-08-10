@@ -26,11 +26,20 @@ export class HomePage implements AfterViewInit {
   rb
   sb
   pb
+
+  bro
+  rafiki
+  camera_img='/assets/camera.png'
+  locate_blob
+  scan_blob
+  reward_blob
+  profile_blob
+
   constructor(public modalController: ModalController, public auth:AuthenticationService) {
     
   }
+
   hide(data){
-    console.log(data)
     if(data=='reward'){
       console.log(this.rb)
       this.rb.style.setProperty('display','none')
@@ -48,11 +57,36 @@ export class HomePage implements AfterViewInit {
     
   }
 
+  showMain(){
+    let sli=<HTMLElement>document.getElementById('slides');
+    let main=<HTMLElement>document.getElementById('main');
+    sli.style.setProperty('display','none')
+    main.style.setProperty('display','block')
+
+  }
+
   swipeNext(){
     this.slides.slideNext();
   }
   
   ngAfterViewInit(): void {
+    let sli=<HTMLElement>document.getElementById('slides');
+    let main=<HTMLElement>document.getElementById('main');
+    if(!this.auth.loggedIn){
+      this.locate_blob = '/assets/locate_blob.png'
+      this.scan_blob = '/assets/scan_blob.png'
+      this.reward_blob = '/assets/reward_blob.png'
+      this.profile_blob = '/assets/profile_blob.png'
+      this.bro = '/assets/bro.png'
+      this.rafiki= '/assets/rafiki.png'
+      sli.style.setProperty('display','block')
+      main.style.setProperty('display','none')
+    }else{
+      sli.style.setProperty('display','none')
+      main.style.setProperty('display','block')
+    }
+    
+
     this.prev=<HTMLElement>document.getElementById('sb');
     this.rb = <HTMLElement>document.getElementById('rb');
     this.sb = <HTMLElement>document.getElementById('sb');
@@ -60,8 +94,7 @@ export class HomePage implements AfterViewInit {
   }
    
   ionApp = <HTMLElement>document.getElementsByTagName('ion-app')[0];
-
-
+  
   async getMap(){
     const modal = await this.modalController.create({
       component: ModalComponent,

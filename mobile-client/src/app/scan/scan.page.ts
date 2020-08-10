@@ -25,8 +25,15 @@ export class ScanPage implements OnInit {
           this.storage.getItem('profile').then(data=>{
             let userId = data['sub'].replace('|','')
             this.socketservice.postUserData(userId, text).subscribe(async (data)=>{
+              let msg = data['message'].toLowerCase()
+              let m=''
+              if(msg.includes('collect')){
+                m='Collected'
+              }else if(msg.includes('return')){
+                m='Returned'
+              }
               const toast = await this.toastController.create({
-                message: data.toString(),
+                message: m,
                 duration: 2000
               });
               toast.present();
