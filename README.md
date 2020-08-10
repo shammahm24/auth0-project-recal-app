@@ -85,17 +85,12 @@ https://gatsby-auth0-redux.vercel.app/account
 
 #### To install the app on your phone
 
-```bash
-Go to https://drive.google.com/file/d/1eimIVADomgV2txN4C3PtwGAU7ydmJRF5/view?usp=sharing
-```
 
-```bash
-Select Open with Package Installer
-```
+##### Go to https://drive.google.com/file/d/1eimIVADomgV2txN4C3PtwGAU7ydmJRF5/view?usp=sharing
 
-```bash
-Press Install
-```
+##### Select Open with Package Installer
+
+##### Press Install
 
 #### To build android app apk and install on your phone:
 
