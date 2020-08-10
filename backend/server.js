@@ -105,7 +105,7 @@ app.post(`/transaction`,(req,res)=>{
     User.findOneAndUpdate({uid :id}, {$inc : {collected : 1}}).exec().then(result=>{
       console.log(result);
       res.status(200).json({
-        message:'User updated',
+        message:'User updated:Collected',
         request:{
           type:'GET',
         }
@@ -117,12 +117,11 @@ app.post(`/transaction`,(req,res)=>{
         error:err
       });
     });
-    res.send("collection complete")
   }else{
     User.findOneAndUpdate({uid :id}, {$inc : {returned : 1}}).exec().then(result=>{
       console.log(result);
       res.status(200).json({
-        message:'User updated',
+        message:'User updated: Return',
         request:{
           type:'GET',
 
@@ -135,7 +134,6 @@ app.post(`/transaction`,(req,res)=>{
         error:err
       });
     });
-    res.send("Return complete")
   }
 console.log(id)}
 else{
