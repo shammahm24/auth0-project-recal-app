@@ -4,7 +4,7 @@
 
 ## About
 
-This app was made for the Auth0 Hackaton, the team involved in the all recal project was [Swapnil Madhavi](https://www.linkedin.com/in/swapnil-madhavi/), [Shammah Matasva](https://www.linkedin.com/in/shammah-matasva/), [Daniel Santos](https://www.linkedin.com/in/daniel-santos-102aa8190/) and [Sandesh Chinchole](https://www.linkedin.com/in/sandeshchinchole/).
+This app was made for the Auth0 Hackaton, the team involved in the recal project was [Swapnil Madhavi](https://www.linkedin.com/in/swapnil-madhavi/), [Shammah Matasva](https://www.linkedin.com/in/shammah-matasva/), [Daniel Santos](https://www.linkedin.com/in/daniel-santos-102aa8190/) and [Sandesh Chinchole](https://www.linkedin.com/in/sandeshchinchole/).
 
 The category we choose on the hackaton was the one that allowed us to solve the impacts of covid in the world. 
 
@@ -81,9 +81,25 @@ https://gatsby-auth0-redux.vercel.app/account
 
 ## How to use it
 
-### For the Android
+### For the Android App
 
-#### To build android app apk:
+#### To install the app on your phone
+
+```bash
+Go to https://drive.google.com/file/d/1eimIVADomgV2txN4C3PtwGAU7ydmJRF5/view?usp=sharing
+```
+
+```bash
+Select Open with Package Installer
+```
+
+```bash
+Press Install
+```
+
+#### To build android app apk and install on your phone:
+
+<p>The Android app was built using Ionic, Angular and Cordova</p>
 
 ```bash
 cd /mobile-client/
@@ -96,13 +112,10 @@ npm install
 ```bash
 ionic cordova prepare android
 ```
-
-```bash
+<p>Connect your phone</p>
+<pre>
 ionic cordova run android
-```
-
-#### Follow
-
+</pre>
 
 ### For the admin tablet app
 
