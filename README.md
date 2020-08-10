@@ -61,6 +61,8 @@ Example of the tablet app for the uni of Chicago:
   <li>Auth0</li>
   <li>Gatsby</li>
   <li>Ionic</li>
+  <li>Angular</li>
+  <li>Cordova</li>
   <li>Vercel (Admin hosting)</li>
   <li>Heroku (Backend hosting)</li>
   
@@ -69,7 +71,7 @@ Example of the tablet app for the uni of Chicago:
 ## App Demo Links
 ### Mobile Client
 #### Android
-https://drive.google.com/file/d/1Gc34QyJ-P1T1Yqtlt305WKwC6E-yZ63S/view?usp=sharing
+https://drive.google.com/file/d/1eimIVADomgV2txN4C3PtwGAU7ydmJRF5/view?usp=sharing
 
 ### Web Client (Admin App) 
 #### This is a tablet app, use in 1024 x 756 
@@ -81,7 +83,7 @@ https://gatsby-auth0-redux.vercel.app/account
 
 ### For the Android
 
-#### To get started you can:
+#### To build android app apk:
 
 ```bash
 cd /mobile-client/
@@ -98,6 +100,8 @@ ionic cordova prepare android
 ```bash
 ionic cordova run android
 ```
+
+#### Follow
 
 
 ### For the admin tablet app
