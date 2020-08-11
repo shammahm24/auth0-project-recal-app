@@ -145,6 +145,5 @@ gatsby develop
 ```
 
 
-## License
-MIT (you can use this for whatever you want)
+
 
