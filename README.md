@@ -32,7 +32,7 @@ If the transaction is authorized, the user then recieves points, which can be ex
 
 These rewards are choosen by the company or university, and can be dynamically updated. For example, if the user is in level 2, and has 1200 points, he might be able to get a free starbucks coffee. This starbucks coffee was decided by the company or university for that specific level or number of points. This allows the Human resourses department at the company or uni to be creative and create a connection with the workers or students.
 
-The items returned or collected, can also be dynamically updated by the company or uni. This allows for flexibility, having a bigger scope of use, and most importantly ...
+The items returned or collected, can also be dynamically updated by the company or university. This allows for flexibility, having a bigger scope of use, and most importantly enstils postitive reinforcements towards society.
 
 ##### Going beyond covid-19 ...
 
