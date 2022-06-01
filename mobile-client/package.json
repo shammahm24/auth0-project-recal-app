@@ -40,7 +40,7 @@
     "mapbox-gl": "^1.11.1",
     "ng-circle-progress": "^1.5.1",
     "rxjs": "~6.5.1",
-    "sharp": "^0.25.4",
+    "sharp": "^0.30.5",
     "socket.io-client": "^2.3.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
